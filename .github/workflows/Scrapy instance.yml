@@ -1,10 +1,13 @@
 name: Run Scrapy
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+  workflow_dispatch:
+  repository_dispatch:
+    types: RunScrapy
 
 jobs:
   build:
